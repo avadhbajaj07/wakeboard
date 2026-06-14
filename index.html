@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Wakeboard & Paddle Genève</title>
+    <meta name="description" content="L'expérience de sports nautiques incontournable de Genève — wakeboard, wakesurf, stand-up paddle, et bien plus.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="Logo" style="height: 32px; margin-right: 8px;">Wakeboard & Paddle
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="active" data-i18n="nav_home">Accueil</a>
+                <a href="#instructor" data-i18n="nav_instructor">Moniteur</a>
+                <a href="#activities" data-i18n="nav_activities">Activités</a>
+                <a href="#pricing" data-i18n="nav_rates">Tarifs</a>
+                <a href="#about" data-i18n="nav_about">À propos</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="nav-socials" style="display: flex; align-items: center; gap: 15px;">
+                <button id="langToggle" class="lang-btn" style="background: transparent; border: 1px solid var(--white); color: var(--white); padding: 5px 10px; border-radius: 5px; cursor: pointer; font-weight: bold; font-family: var(--font-body);">EN</button>
+                <a href="#">Ig</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Slider/imgi_4_surfer.jpg');">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <span class="section-subtitle text-white slide-fade-up" data-i18n="hero1_sub">Lac Léman · Corsier-Port · Dép. 2022</span>
+                        <h1 class="slide-fade-up delay-1" data-i18n="hero1_title">Surfez sur le lac.<br>Sentez-vous vivant.</h1>
+                        <p class="slide-fade-up delay-2" data-i18n="hero1_desc">L'expérience de sports nautiques incontournable de Genève — wakeboard, wakesurf, stand-up paddle, et bien plus, encadrée par un coach professionnel fort de 20 ans d'expérience. Aucune expérience requise. Venez comme vous êtes.</p>
+                        <a href="#" class="btn btn-primary slide-fade-up delay-3 open-booking-btn" data-i18n="btn_book">Réserver une session</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Slider/male-surfer-on-a-blue-wave-at-sunny-day.jpg');">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <span class="section-subtitle text-white slide-fade-up" data-i18n="hero2_sub">Coaching Professionnel</span>
+                        <h1 class="slide-fade-up delay-1" data-i18n="hero2_title">Maîtrisez les<br>Vagues.</h1>
+                        <p class="slide-fade-up delay-2" data-i18n="hero2_desc">Améliorez vos compétences avec un enseignement personnalisé. Des débutants aux riders confirmés, nous adaptons chaque session à votre niveau.</p>
+                        <a href="#" class="btn btn-primary slide-fade-up delay-3 open-booking-btn" data-i18n="btn_book">Réserver une session</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Slider/two-beautiful-sporty-girls-surfing-in-the-ocean-.jpg');">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <span class="section-subtitle text-white slide-fade-up" data-i18n="hero3_sub">Du Fun entre Amis</span>
+                        <h1 class="slide-fade-up delay-1" data-i18n="hero3_title">Des Moments<br>Inoubliables.</h1>
+                        <p class="slide-fade-up delay-2" data-i18n="hero3_desc">Partagez des sensations fortes avec votre groupe. Idéal pour les anniversaires, les team buildings, ou simplement pour passer une journée mémorable sur l'eau.</p>
+                        <a href="#" class="btn btn-primary slide-fade-up delay-3 open-booking-btn" data-i18n="btn_book">Réserver une session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="prev-slide">&#10094;</button>
+            <button class="next-slide">&#10095;</button>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Hero Stats List (Moved from Hero text to be prominent below) -->
+    <section class="hero-stats bg-light">
+        <div class="container hero-stats-container">
+            <div class="stat-box fade-in-up">
+                <h4 data-i18n="stat1_title">Lac Léman</h4>
+                <p data-i18n="stat1_desc">Basé à Corsier-Port</p>
+            </div>
+            <div class="stat-box fade-in-up delay-1">
+                <h4 data-i18n="stat2_title">Mi-Mai – Fin Oct</h4>
+                <p data-i18n="stat2_desc">Disponibilité saisonnière</p>
+            </div>
+            <div class="stat-box fade-in-up delay-2">
+                <h4 data-i18n="stat3_title">Tous niveaux acceptés</h4>
+                <p data-i18n="stat3_desc">Du débutant au confirmé</p>
+            </div>
+            <div class="stat-box fade-in-up delay-3">
+                <h4 data-i18n="stat4_title">Équipement inclus</h4>
+                <p data-i18n="stat4_desc">Tout est fourni</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="challenge" id="instructor">
+        <div class="container challenge-container">
+            <div class="challenge-images fade-in-left">
+                <img src="assets/coach2.jpg" alt="Instructor" class="img-1">
+                <img src="assets/coach.jpg" alt="Coach Surfing" class="img-2">
+                <img src="assets/wbp.jpeg" alt="Water Sports" class="img-3">
+            </div>
+            <div class="challenge-content fade-in-right">
+                <span class="section-subtitle" data-i18n="instructor_sub">VOTRE MONITEUR</span>
+                <h2 class="section-title" data-i18n="instructor_title">Rencontrez Sylvain,<br>Votre Capitaine & Coach</h2>
+                <p data-i18n="instructor_desc1">Basé à Corsier-Port sur les rives du lac Léman, Sylvain est un coach sportif diplômé depuis plus de 20 ans — passionné par les sports nautiques, les sports extrêmes et déterminé à vous faire découvrir les frissons de la glisse.</p>
+                <p style="margin-top: 15px;" data-i18n="instructor_desc2">Que vous montiez sur une planche pour la première fois ou que vous cherchiez à affiner votre technique, Sylvain adapte chaque session à votre niveau et à vos objectifs. La sécurité, le plaisir et la progression sont toujours la priorité.</p>
+                
+                <div class="challenge-actions" style="margin-top: 30px;">
+                    <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="explore" id="activities">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-text fade-in-left">
+                    <span class="section-subtitle" data-i18n="activities_sub">CE QUE NOUS PROPOSONS</span>
+                    <h2 class="section-title" data-i18n="activities_title">Des Sports Nautiques pour<br>Tous les Niveaux de Sensations</h2>
+                </div>
+                <div class="header-desc fade-in-right">
+                    <p data-i18n="activities_desc1">Les activités nautiques tractées ont lieu de mi-mai à fin octobre, selon les conditions météorologiques. Notre bateau est un Correct Craft Air Nautique 211 Team Edition — il peut accueillir jusqu'à 8 adultes. Les enfants de moins de 1m20 comptent pour une demi-personne. Tout l'équipement est fourni.</p>
+                    <p style="font-size: 0.85rem; margin-top: 10px; color: var(--primary-dark);" data-i18n="activities_desc2">* Les sessions de paddle se font uniquement sur réservation au Chemin du Nant d'Argent 1, 1223 Cologny. Tous les sports nautiques tractés partent de Corsier-Port.</p>
+                </div>
+            </div>
+            
+            <div class="activity-grid-new">
+                <div class="act-card fade-in-up">
+                    <img src="assets/activities/wakeboard-01.jpg" alt="Wakeboard">
+                    <div class="act-content">
+                        <h3>Wakeboard</h3>
+                        <p data-i18n="act_wakeboard">Chaussez vos chausses et laissez-vous tracter sur le sillage. Classique, exaltant et infiniment amusant pour tous les niveaux.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-1">
+                    <img src="assets/activities/wakesurf-01.jpg" alt="Wakesurf">
+                    <div class="act-content">
+                        <h3>Wakesurf</h3>
+                        <p data-i18n="act_wakesurf">Lâchez la corde et surfez la vague infinie du bateau. Ce qui se rapproche le plus du surf océanique sur un lac.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-2">
+                    <img src="assets/activities/wakeskate-01.jpg" alt="Wakeskate">
+                    <div class="act-content">
+                        <h3>Wakeskate</h3>
+                        <p data-i18n="act_wakeskate">Comme le wakeboard, mais sans les chausses — un peu comme faire du skateboard sur l'eau. Les figures sont les bienvenues.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-3">
+                    <img src="assets/activities/bodyboard-01.jpg" alt="Bodyboard">
+                    <div class="act-content">
+                        <h3>Bodyboard</h3>
+                        <p data-i18n="act_bodyboard">Allongez-vous à plat et ressentez l'adrénaline d'être tracté à grande vitesse sur le lac. Idéal pour tous les âges.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up">
+                    <img src="assets/activities/bouee-inflatable-tube-01.jpg" alt="Inflatable Tube">
+                    <div class="act-content">
+                        <h3 data-i18n="act_tube_title">Bouée Tractée</h3>
+                        <p data-i18n="act_tube">Du pur bonheur pour les groupes et les familles. Accrochez-vous bien et profitez de la balade la plus folle du lac.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-1">
+                    <img src="assets/activities/subwing-02.webp" alt="Subwing">
+                    <div class="act-content">
+                        <h3>Subwing</h3>
+                        <p data-i18n="act_subwing">Tenez l'aile sous l'eau pendant que le bateau vous tracte dans les profondeurs. Une sensation totalement unique.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-2">
+                    <img src="assets/activities/stand-up-paddle-01.jpg" alt="Stand-Up Paddle">
+                    <div class="act-content">
+                        <h3>Stand-Up Paddle</h3>
+                        <p data-i18n="act_sup">Explorez le lac à votre propre rythme. Parfait pour la détente, le fitness ou pour apprendre l'équilibre sur l'eau.</p>
+                    </div>
+                </div>
+                <div class="act-card fade-in-up delay-3">
+                    <img src="assets/activities/paddle-fitness-01.jpg" alt="Paddle Fitness">
+                    <div class="act-content">
+                        <h3>Paddle Fitness</h3>
+                        <p data-i18n="act_paddlefit">Combinez gainage et endurance sur l'eau. Un entraînement complet du corps que vous allez vraiment apprécier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-bento-section" id="pricing">
+        <div class="bento-header">
+          <div>
+            <p class="bento-tag" data-i18n="pricing_tag">Lac Léman · Corsier-Port</p>
+            <h2 class="bento-title" data-i18n="pricing_title">Une Tarification<br><span>Simple</span></h2>
+          </div>
+          <p class="bento-note" data-i18n="pricing_note">
+            <strong>Tout l'équipement est inclus.</strong><br>
+            Aucun frais caché. Réservez via WhatsApp<br>
+            ou via le formulaire de réservation ci-dessous.
+          </p>
+        </div>
+
+        <div class="bento">
+          <div class="bento-card bento-hero c-wake open-booking-btn" data-activity="Wakeboard">
+            <img src="assets/activities/wakeboard-01.jpg" alt="Wakeboard" loading="lazy">
+            <div class="bento-card-body">
+              <span class="bento-tag-featured" data-i18n="most_popular">Le Plus Populaire</span>
+              <div class="bento-card-name">Wakeboard</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 60</div>
+                <span class="bento-duration" data-i18n="dur_12min">12 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card bento-hero c-surf open-booking-btn" data-activity="Wakesurf">
+            <img src="assets/activities/wakesurf-01.jpg" alt="Wakesurf" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Wakesurf</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 60</div>
+                <span class="bento-duration" data-i18n="dur_12min">12 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-skate open-booking-btn" data-activity="Wakeskate">
+            <img src="assets/activities/wakeskate-01.jpg" alt="Wakeskate" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Wakeskate</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 50</div>
+                <span class="bento-duration" data-i18n="dur_12min">12 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-hybrid open-booking-btn" data-activity="Hybrid Board">
+            <img src="assets/activities/hybrid-board-01.jpg" alt="Hybrid Board" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name" data-i18n="hybrid_board">Planche Hybride</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 40</div>
+                <span class="bento-duration" data-i18n="dur_12min">12 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-mono open-booking-btn" data-activity="Mono Ski">
+            <img src="assets/activities/mono-ski-01.jpg" alt="Mono Ski" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Mono Ski</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 60</div>
+                <span class="bento-duration" data-i18n="dur_12min">12 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-tube open-booking-btn" data-activity="Inflatable Tube">
+            <img src="assets/activities/bouee-inflatable-tube-01.jpg" alt="Inflatable Tube" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name" data-i18n="act_tube_title">Bouée Tractée</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 50</div>
+                <span class="bento-duration" data-i18n="dur_10min">10 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-sub open-booking-btn" data-activity="Subwing">
+            <img src="assets/activities/subwing-02.webp" alt="Subwing" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Subwing</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 25</div>
+                <span class="bento-duration" data-i18n="dur_10min">10 min</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-sup open-booking-btn" data-activity="Stand-Up Paddle">
+            <img src="assets/activities/stand-up-paddle-01.jpg" alt="Stand-Up Paddle" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Stand-Up Paddle</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 30</div>
+                <span class="bento-duration" data-i18n="dur_1hr">1 h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-suppt open-booking-btn" data-activity="SUP Personal Training">
+            <img src="assets/activities/sup-personal-training-01.jpg" alt="SUP Personal Training" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name" data-i18n="sup_pt">Coaching Privé SUP</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 80</div>
+                <span class="bento-duration" data-i18n="dur_1hr">1 h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card c-padf open-booking-btn" data-activity="Paddle Fitness">
+            <img src="assets/activities/paddle-fitness-01.jpg" alt="Paddle Fitness" loading="lazy">
+            <div class="bento-card-body">
+              <div class="bento-card-name">Paddle Fitness</div>
+              <div class="bento-price-row">
+                <div class="bento-price"><span class="bento-currency">CHF</span> 30</div>
+                <span class="bento-duration" data-i18n="dur_1hr">1 h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-card">
+            <div>
+              <p class="cta-label" data-i18n="charter_label">Location Privée</p>
+              <p class="cta-title" data-i18n="charter_title">Prenez le bateau entier<br>pour vous</p>
+            </div>
+            <div class="cta-prices">
+              <div class="cta-tier">
+                <div class="cta-tier-price"><sup>CHF</sup>250</div>
+                <div class="cta-tier-dur" data-i18n="dur_1hour">1 heure</div>
+              </div>
+              <div class="cta-tier">
+                <div class="cta-tier-price"><sup>CHF</sup>425</div>
+                <div class="cta-tier-dur" data-i18n="dur_2hours">2 heures</div>
+              </div>
+              <div class="cta-tier">
+                <div class="cta-tier-price"><sup>CHF</sup>600</div>
+                <div class="cta-tier-dur" data-i18n="dur_3hours">3 heures</div>
+              </div>
+            </div>
+            <a href="#" class="cta-btn open-booking-btn" data-activity="Private Charter" data-i18n="btn_charter">Réserver le Bateau</a>
+          </div>
+
+        </div>
+
+        <p class="pricing-footer" data-i18n="pricing_footer">
+          Les activités nautiques tractées ont lieu de mi-mai à fin octobre · Jusqu'à 8 adultes par session · Tout l'équipement est fourni · Réservation via WhatsApp +41 78 658 66 34
+        </p>
+    </section>
+
+    <!-- Corporate Team Building -->
+    <section class="canoeing-banner">
+        <div class="container banner-container fade-in-up">
+            <span class="section-subtitle" data-i18n="corp_sub">TEAM BUILDING D'ENTREPRISE</span>
+            <h2 class="section-title text-white" data-i18n="corp_title">Des moments inoubliables garantis.</h2>
+            <p style="font-weight: 600; color: #fff; font-size: 1.2rem; margin-bottom: 20px;" data-i18n="corp_price">À partir de 1 000 CHF / jour (hors taxes)</p>
+            <p data-i18n="corp_desc">Vous cherchez à passer une journée mémorable avec votre équipe ? Nous concevons des expériences de sports nautiques sur mesure — activités tractées plus sessions de stand-up paddle — à l'endroit de votre choix. Entièrement géré, entièrement dynamisant.</p>
+            <a href="#" class="btn btn-secondary open-booking-btn" style="margin-top: 20px;" data-i18n="btn_book_now">Réserver Maintenant</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="no-limit" id="about">
+        <div class="container no-limit-container">
+            <div class="no-limit-image fade-in-left">
+                <img src="assets/boat interior.jpg" alt="Team Building on the boat">
+            </div>
+            <div class="no-limit-content fade-in-right">
+                <span class="section-subtitle" data-i18n="about_sub">QUI NOUS SOMMES</span>
+                <h2 class="section-title" data-i18n="about_title">Né d'une Passion pour le Sport</h2>
+                <p data-i18n="about_desc1">Wakeboard & Paddle Geneva fait partie de <strong>Perform Studio</strong> — une entreprise genevoise fondée sur la conviction que le sport transforme des vies. Nous combinons l'énergie créative à l'expertise technique pour vous offrir des expériences qui repoussent les limites et favorisent votre bien-être physique et mental.</p>
+                <p style="margin-top: 15px;" data-i18n="about_desc2">Situé à Genève, à quelques pas de la gare des Eaux-Vives, Perform Studio propose une gamme complète de services de coaching en parallèle de nos activités sur le lac. Nous croyons en la qualité, l'attention et au dépassement de ce que vous pensiez possible.</p>
+                
+                <div class="founder-info" style="margin-top: 30px; border-left: 4px solid var(--primary); padding-left: 20px;">
+                    <p style="font-style: italic; color: var(--text-dark); margin-bottom: 10px;" data-i18n="about_quote">"Le vrai luxe, c'est de se retrouver seul avec son coach dans un cadre entièrement privé — où chaque minute vous est consacrée."</p>
+                    <h4 style="margin: 0;">Sylvain Delobel</h4>
+                    <p style="font-size: 0.85rem; margin: 0;" data-i18n="about_founder">Fondateur, Perform Studio · Head Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-light" id="contact" style="padding: 100px 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in-left">
+                    <span class="section-subtitle" data-i18n="contact_sub">NOUS CONTACTER</span>
+                    <h2 class="section-title" data-i18n="contact_title">Prêt à vous Jeter à l'Eau ?</h2>
+                    
+                    <div class="contact-card">
+                        <img src="assets/imgi_76_kayaker-on-the-river.jpg" alt="Contact Image" style="border-radius: 10px; margin-bottom: 30px; height: 250px; width: 100%; object-fit: cover;">
+                        
+                        <div class="info-item">
+                            <h4 data-i18n="contact_phone">Téléphone / WhatsApp</h4>
+                            <p>+41 78 658 66 34 <em data-i18n="contact_quickest">(le moyen le plus rapide pour réserver)</em></p>
+                        </div>
+                        <div class="info-item">
+                            <h4 data-i18n="contact_email">E-mail</h4>
+                            <p>Info@wakeboardpaddlegeneva.ch</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-locations fade-in-right">
+                    <div class="location-box">
+                        <h3 data-i18n="contact_loc_title">Emplacements</h3>
+                        <ul>
+                            <li>
+                                <strong data-i18n="contact_loc_water">Point de départ des sports tractés :</strong><br>
+                                Corsier-Port, Geneva<br>
+                                <em data-i18n="contact_loc_water_sub">(les activités tractées partent d'ici)</em>
+                            </li>
+                            <li style="margin-top: 15px;">
+                                <strong data-i18n="contact_loc_paddle">Point de départ du Paddle :</strong><br>
+                                Ch. du Nant d'Argent 1, 1223 Cologny
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="location-box" style="margin-top: 30px;">
+                        <h3 data-i18n="contact_hours_title">Horaires d'Ouverture</h3>
+                        <ul>
+                            <li><strong data-i18n="contact_hours_mf">Lundi – Vendredi :</strong> 06:30 – 21:00</li>
+                            <li><strong data-i18n="contact_hours_ss">Samedi – Dimanche :</strong> 09:00 – 18:00</li>
+                            <li style="margin-top: 15px; color: var(--primary-dark); font-weight: bold;" data-i18n="contact_hours_season">
+                                Saison : de Mi-Mai à Fin Octobre
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" style="padding-top: 0;">
+        <div class="container gallery-container-full text-center">
+            <div class="gallery-grid fade-in-up">
+                <img src="assets/imgi_56_happy-friends-group-having-fun-at-beach-party-on-holi-festival-summer-vacation.jpg" alt="Gallery">
+                <img src="assets/imgi_59_group-of-friends-having-fun-running-on-the-beach-with-smoke-bombs.jpg" alt="Gallery">
+                <img src="assets/imgi_58_two-beautiful-sporty-girls-surfing-in-the-ocean-.jpg" alt="Gallery">
+                <img src="assets/imgi_61_surfers.jpg" alt="Gallery">
+                <img src="assets/imgi_63_male-surfer-on-a-blue-wave-at-sunny-day.jpg" alt="Gallery">
+                <img src="assets/boat 2 .jpg" alt="Gallery">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/logo.svg" alt="Logo" style="height: 32px; margin-right: 8px;">Wakeboard & Paddle
+                </a>
+                <p data-i18n="footer_brand">Fait partie de Perform Studio<br>Av. de Chamonix 7, 1207 Genève, Suisse</p>
+            </div>
+            
+            <div class="footer-contact text-right">
+                <p style="margin-bottom: 20px;">
+                    <a href="#" class="ig-btn" data-i18n="footer_ig">Suivez-nous sur Instagram</a>
+                </p>
+                <p>&copy; 2026 Wakeboard & Paddle Geneva</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal-overlay" id="bookingModal">
+        <div class="booking-modal">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal_title">Réserver votre session</h3>
+            <p class="modal-desc" data-i18n="modal_desc">Remplissez les informations ci-dessous et nous confirmerons votre réservation via WhatsApp.</p>
+            
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="b-activity" data-i18n="modal_label_activity">Activité</label>
+                    <select id="b-activity" required>
+                        <option value="" disabled selected data-i18n="modal_opt_default">Sélectionnez une activité...</option>
+                        <option value="Wakeboard">Wakeboard</option>
+                        <option value="Wakesurf">Wakesurf</option>
+                        <option value="Wakeskate">Wakeskate</option>
+                        <option value="Hybrid Board" data-i18n="modal_opt_hybrid">Planche Hybride</option>
+                        <option value="Mono Ski">Mono Ski</option>
+                        <option value="Inflatable Tube" data-i18n="modal_opt_tube">Bouée Tractée</option>
+                        <option value="Subwing">Subwing</option>
+                        <option value="Stand-Up Paddle">Stand-Up Paddle</option>
+                        <option value="SUP Personal Training" data-i18n="modal_opt_suppt">Coaching Privé SUP</option>
+                        <option value="Paddle Fitness">Paddle Fitness</option>
+                        <option value="Private Charter" data-i18n="modal_opt_charter">Location Privée</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="b-date" data-i18n="modal_label_date">Date</label>
+                        <input type="date" id="b-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="b-time" data-i18n="modal_label_time">Heure</label>
+                        <input type="time" id="b-time" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="b-persons" data-i18n="modal_label_persons">Nombre de Personnes</label>
+                    <input type="number" id="b-persons" min="1" max="8" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="b-name" data-i18n="modal_label_name">Votre Nom</label>
+                    <input type="text" id="b-name" placeholder="Ex: Jean Dupont" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 modal-submit" data-i18n="modal_btn_submit">Envoyer via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
