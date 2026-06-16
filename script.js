@@ -205,7 +205,29 @@ const galleryImages = [
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592600/slider-wake-board-1.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592638/slider-wake-board-2.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592644/slider-wake-board-3.jpg',
-    // Add remaining Cloudinary gallery image URLs here.
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592650/slider-wake-board-4.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592658/slider-wake-board-5.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592664/slider-wake-board-6.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592671/slider-wake-board-7.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592679/slider-wake-board-8.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592684/slider-wake-board-9.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592697/slider-wake-board-10.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592704/slider-wake-board-11.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592710/slider-wake-board-12.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592720/slider-wake-board-13.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592727/slider-wake-board-14.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592733/slider-wake-board-15.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592741/slider-wake-board-16.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592747/slider-wake-board-17.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592755/slider-wake-board-18.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592762/slider-wake-board-19.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592768/slider-wake-board-20.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592774/slider-wake-board-21.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592780/slider-wake-board-23.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592785/slider-wake-board-25.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592791/slider-wake-board-26.jpg',
+    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592799/slider-wake-board-27.jpg',
+    // Add more Cloudinary gallery image URLs here.
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
