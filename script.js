@@ -473,6 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryDots = document.querySelector('.gallery-carousel-dots');
 
     if (galleryCarousel && galleryTrack && galleryDots && galleryImages.length > 0) {
+        const galleryDotCount = 3;
         let currentGallerySlide = galleryImages.length;
         let galleryInterval;
         let touchStartX = 0;
@@ -494,12 +495,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         [...galleryImages, ...galleryImages, ...galleryImages].forEach(renderGallerySlide);
 
-        galleryImages.forEach((src, index) => {
+        Array.from({ length: galleryDotCount }).forEach((_, index) => {
             const dot = document.createElement('button');
             dot.className = 'gallery-carousel-dot';
             dot.type = 'button';
-            dot.setAttribute('aria-label', `Go to gallery image ${index + 1}`);
-            dot.addEventListener('click', () => goToGallerySlide(index));
+            dot.setAttribute('aria-label', `Go to gallery group ${index + 1}`);
+            dot.addEventListener('click', () => goToGallerySlide(Math.floor(index * galleryImages.length / galleryDotCount)));
             galleryDots.appendChild(dot);
         });
 
@@ -507,7 +508,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const galleryDotButtons = document.querySelectorAll('.gallery-carousel-dot');
 
         const updateGalleryDots = () => {
-            const activeDot = ((currentGallerySlide % galleryImages.length) + galleryImages.length) % galleryImages.length;
+            const activeImage = ((currentGallerySlide % galleryImages.length) + galleryImages.length) % galleryImages.length;
+            const activeDot = Math.min(galleryDotCount - 1, Math.floor(activeImage / (galleryImages.length / galleryDotCount)));
             galleryDotButtons.forEach((dot, index) => {
                 dot.classList.toggle('active', index === activeDot);
             });
