@@ -713,7 +713,7 @@ img {
 /* Canoeing Banner */
 .canoeing-banner {
     padding: 120px 0;
-    background: linear-gradient(rgba(0,180,204,0.8), rgba(0,180,204,0.8)), url('assets/imgi_60_turquoise-lake-kayak-tour.jpg') center/cover;
+    background: linear-gradient(rgba(0,180,204,0.8), rgba(0,180,204,0.8)), url('https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781555237/group_sctivity_gwwtx6.png') center/cover;
     text-align: center;
 }
 
