@@ -206,7 +206,7 @@ const galleryImages = [
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592638/slider-wake-board-2.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592644/slider-wake-board-3.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592650/slider-wake-board-4.jpg',
-    'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592658/slider-wake-board-5.jpg',
+
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592664/slider-wake-board-6.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592671/slider-wake-board-7.jpg',
     'https://res.cloudinary.com/dm4jfxbcs/image/upload/v1781592679/slider-wake-board-8.jpg',
