@@ -1033,12 +1033,49 @@ img {
     
     .hero-content h1 { font-size: 2.5rem; }
     .section-title { font-size: 2rem; }
+
+    /* ── MOBILE SECTION SPACING FIXES ── */
+    .challenge { padding: 50px 0; }
+    .explore { padding: 50px 0; }
+    .no-limit { padding: 50px 0; }
+    .gallery-section { padding: 40px 0; }
+    .canoeing-banner { padding: 60px 0; }
+    .contact-section { padding: 50px 0 !important; }
+    .hero-stats { padding: 25px 0; }
+
+    /* Fix large empty gaps in stacked grid sections */
+    .challenge-container { gap: 30px; }
+    .no-limit-container { gap: 30px; margin-bottom: 40px; }
+    .contact-grid { gap: 30px; }
+    .activity-grid-new { gap: 16px; margin-top: 24px; }
+
+    /* Instructor image height on mobile */
+    .challenge-images-single img { height: 260px; }
+
+    /* About section image */
+    .no-limit-image img { border-radius: 12px; }
+
+    /* Section headers tighter on mobile */
+    .section-header { gap: 16px; margin-bottom: 24px; }
+    .section-title { margin-bottom: 12px; }
+    .section-subtitle { margin-bottom: 6px; }
 }
 
 @media (max-width: 480px) {
     .hero-content h1 { font-size: 2rem; }
     .section-title { font-size: 1.8rem; }
     .pricing-grid { grid-template-columns: 1fr; }
+
+    /* Even tighter spacing on small phones */
+    .challenge { padding: 36px 0; }
+    .explore { padding: 36px 0; }
+    .no-limit { padding: 36px 0; }
+    .gallery-section { padding: 30px 0; }
+    .canoeing-banner { padding: 48px 0; }
+    .contact-section { padding: 36px 0 !important; }
+    .hero-stats { padding: 20px 0; }
+    .challenge-container,
+    .no-limit-container { gap: 20px; }
 }
 
 
